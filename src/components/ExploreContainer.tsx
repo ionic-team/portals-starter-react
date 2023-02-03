@@ -1,12 +1,14 @@
-import './ExploreContainer.css';
+import "./ExploreContainer.css";
 
-interface ContainerProps { }
+interface ContainerProps {
+  initialContext: any;
+}
 
-const ExploreContainer: React.FC<ContainerProps> = () => {
+const ExploreContainer: React.FC<ContainerProps> = ({ initialContext }) => {
   return (
     <div className="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <h3>Initial Context:</h3>
+      <pre>{JSON.stringify(initialContext)}</pre>
     </div>
   );
 };

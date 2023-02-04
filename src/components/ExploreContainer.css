@@ -1,24 +1,39 @@
 .container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 50px 25px;
+  line-height: 1.5em;
 }
 
-.container strong {
-  font-size: 20px;
-  line-height: 26px;
+img.logo {
+  margin: 0 auto 38px;
+  display: block;
+  width: 33%;
 }
 
-.container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
+.info-list {
+  padding: 15px;
+  list-style: none;
+}
+
+.info-list li {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 8px 0;
+}
+
+.info-list p {
   margin: 0;
+  width: 100%;
 }
 
-.container a {
-  text-decoration: none;
+.info-list a {
+  display: block;
+  margin: 8px;
+}
+
+pre {
+  color: #ffffff;
+  background-color: #383a3e;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 16px 8px;
 }
